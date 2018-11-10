@@ -4,7 +4,4 @@ def is_palindromo(texto):
     if (texto == ''):
         return False
     else:
-        if texto == texto[::-1]:
-            return True
-        else:
-            return False
+        return texto == texto[::-1]
