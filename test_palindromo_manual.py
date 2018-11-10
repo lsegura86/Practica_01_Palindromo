@@ -3,26 +3,14 @@ import pytest
 
 #
 def test_palindromo_manual():
-    res = palindromo_manual.is_palindromo(1234)
-    print(res)
-    assert res == False
+    assert palindromo_manual.is_palindromo(1234) == False
 
-    res = palindromo_manual.is_palindromo(1234321)
-    print(res)
-    assert res == True
+    assert palindromo_manual.is_palindromo(1234321) == True
 
-    res = palindromo_manual.is_palindromo('')
-    print(res)
-    assert res == False
+    assert palindromo_manual.is_palindromo('') == False
 
-    res = palindromo_manual.is_palindromo('hola')
-    print(res)
-    assert res == False
+    assert palindromo_manual.is_palindromo('hola') == False
 
-    res = palindromo_manual.is_palindromo('holaloh')
-    print(res)
-    assert res == True
+    assert palindromo_manual.is_palindromo('holaloh') == True
 
-    res = palindromo_manual.is_palindromo('h')
-    print(res)
-    assert res == True
+    assert palindromo_manual.is_palindromo('h') == True
